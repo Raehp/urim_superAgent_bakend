@@ -3,6 +3,13 @@ spring:
     name: urim-ai-agent
   profiles:
     active: local
+  ai:
+    vectorstore:
+      pgvector:
+      index-type: HNSW
+      distance-type: COSINE_DISTANCE
+      dimensions: 1536   # 维度越大 匹配越精确 同样开销越大 若不确定数据量的多少 可以暂时不指定 设置后不可改变
+      max-document-batch-size: 10000 # Optional: Maximum number of documents per batch
 server:
   port: 8123  # 端口
   servlet:
