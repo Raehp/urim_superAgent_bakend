@@ -7,7 +7,9 @@
         "@amap/amap-maps-mcp-server"
       ],
       "env": {
-        "AMAP_MAPS_API_KEY": "no achieve"
+        "AMAP_MAPS_API_KEY": "no achieve",
+        "我这里没有实现 所以注释": "\"urim-image-search-mcp-server\": {\n    \"command\": \"java\",\n    \"args\": [\n      \"-Dspring.ai.mcp.server.stdio=true\",\n      \"-Dspring.main.web-application-type=none\",\n      \"-Dlogging.pattern.console=\",\n      \"-jar\",\n      \"urim-image-search-mcp-server/target/urim-image-search-mcp-server-0.0.1-SNAPSHOT.jar\"\n    ],\n    \"env\": {}\n  }"
+
       }
     }
   }
